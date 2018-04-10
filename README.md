@@ -43,7 +43,7 @@ How to use it
 
 Usage:
 
-  smem	[[-u] [<user-list>]] [-p <partition-name>] [-w <host-list>] [[-g] [<resources-list>]]
+  smem	[[-u] [\<user-list\>]] [-p \<partition-name\>] [-w \<host-list\>] [[-g] [\<resources-list\>]]
 
   -u [<user-list>]     Shows the resources in use by all the jobs currently
                          running.  If the user list is present, shows only the
