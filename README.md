@@ -45,13 +45,13 @@ Usage:
 
   smem	[[-u] [\<user-list\>]] [-p \<partition-name\>] [-w \<host-list\>] [[-g] [\<resources-list\>]]
 
-  -u [\<user-list\>]  Shows the resources in use by all the jobs currently
-                      running.  If the user list is present, shows only the
-		      running jobs that belong to the users list. The resource
-                      list has to be comma separated list.
+  -u [\<user-list\>]     Shows the resources in use by all the jobs currently
+                         running.  If the user list is present, shows only the
+		         running jobs that belong to the users list. The resource
+                         list has to be comma separated list.
 			 
-  -p \<partition-list\>      Shows information only for the given partitions The partitions has to be.
-				a comma separated list.
+  -p \<partition-list\>  Shows information only for the given partitions The partitions has to be.
+                         a comma separated list.
 									
   -g [\<resource-list\>] Show the usage of the general resources. If the resource
                          list is  present, shows only the usage of the resources
@@ -60,5 +60,6 @@ Usage:
 			 
   -w \<host-list\>       Show information only for the given host list. The host list
                          has to be a comma separated list.
-  -h                   Shows this help.
+			 
+  -h                     Shows this help.
 
