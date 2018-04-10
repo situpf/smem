@@ -9,30 +9,37 @@ SMEM show us the current state of the resources available in a Slurm cluster
 with the possibility to choose if we want to view the jobs that are allocating
 the resources.
 
+SMEM show us the current state of the resources available in a Slurm cluster with 
+the possibility to choose which jobs we want to list (we can indicate to the tool 
+that we want to see only the jobs that belong to some user, partition or computers).
+
 Requisites
 ==========
 
-To be able to run SMEM in our cluster, this tool needs to be executed in a compute that has access to the tools sacctmgr, scontrol, sstat, sinfo and sacct.
+To be able to run SMEM in our cluster, this tool needs to be executed in a computer 
+that belongs to the Slurm cluster. The tool needs to have access to the slurm 
+commands sacctmgr, scontrol, sstat, sinfo and sacct.
 
-As this tool is a php script, we also need to have php installed in the computer.
+As this tool is a php script, we also need to have php interpreter installed in the
+computer.
 
 Installation
 ============
 
-The only modification that is necesary to be done in the computer i to add this line in the sudo file:
+The only modification that is necesary to be done in the computer i to add this line 
+in the sudo file:
 
 ALL ALL=(ALL) NOPASSWD: /usr/bin/sstat
 
-By default, the sstat command only allow us to show information of our jobs. We need to modify this behavior to be able to
-run stat to collect any information of all the jobs that are in the cluster. This is done it using the sudo tool, so it is needed to add the previous line in the sudo file.
+By default, the sstat command only allow us to show information of our jobs. We need 
+to modify this behavior to be able to run stat to collect some information of all the 
+jobs that are in the cluster. This is done by SMEM using the sudo tool, so it is needed 
+to add the previous line in the sudo file.
 
+It is also advisable to have SMEM available in the PATH.
 
 How to use it
 ==============
-
-Description:
-
-  Shows the resource usage of all the cluster nodes.
 
 Usage:
 
